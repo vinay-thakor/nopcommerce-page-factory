@@ -1,0 +1,91 @@
+2020-04-19 17:04:686 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-19 17:04:46 INFO  LoginPage :50 - verify welCometext : Welcome, Please Sign In!dispay on login page[[ChromeDriver: chrome on WINDOWS (f148a676f57665d2edcd5f08d2cd8423)] -> css selector: div.page-title]<br>
+2020-04-19 17:04:89 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-19 17:04:72 INFO  LoginPage :50 - verify welCometext : Welcome, Please Sign In!dispay on login page[[ChromeDriver: chrome on WINDOWS (b16a885f711c46e628f546363ff45d8a)] -> css selector: div.page-title]<br>
+2020-04-21 13:04:37 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 13:04:996 INFO  HomePage :31 - clicking On Login Link : [[ChromeDriver: chrome on WINDOWS (929a0f59ab8a8e209f2bf5cfb1b1b9d2)] -> css selector: a.ico-login]
+2020-04-21 13:04:108 INFO  LoginPage :51 - Getting text from : [[ChromeDriver: chrome on WINDOWS (929a0f59ab8a8e209f2bf5cfb1b1b9d2)] -> css selector: div.page-title]
+2020-04-21 14:04:693 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 14:04:471 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (d0346b0e41b665be17f9c49f25cfec54)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 14:04:506 INFO  RegisterPage :49 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (d0346b0e41b665be17f9c49f25cfec54)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 14:04:742 INFO  RegisterPage :58 - Click on Male Gender Redio Button [[ChromeDriver: chrome on WINDOWS (d0346b0e41b665be17f9c49f25cfec54)] -> xpath: //input[@id='gender-male']]
+2020-04-21 14:04:843 INFO  RegisterPage :65 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (d0346b0e41b665be17f9c49f25cfec54)] -> xpath: //input[@id='gender-female']]
+2020-04-21 14:04:37 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 14:04:126 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (03346fa861aa74c3404bbf3847b7d9cb)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 14:04:148 INFO  RegisterPage :49 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (03346fa861aa74c3404bbf3847b7d9cb)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 14:04:314 INFO  RegisterPage :58 - Click on Male Gender Redio Button [[ChromeDriver: chrome on WINDOWS (03346fa861aa74c3404bbf3847b7d9cb)] -> xpath: //input[@id='gender-male']]
+2020-04-21 14:04:411 INFO  RegisterPage :65 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (03346fa861aa74c3404bbf3847b7d9cb)] -> xpath: //input[@id='gender-female']]
+2020-04-21 14:04:574 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 14:04:202 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (7048080990d74e7bdfe5f82b80fae40d)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 14:04:235 INFO  RegisterPage :49 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (7048080990d74e7bdfe5f82b80fae40d)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 14:04:376 INFO  RegisterPage :58 - Click on Male Gender Redio Button [[ChromeDriver: chrome on WINDOWS (7048080990d74e7bdfe5f82b80fae40d)] -> xpath: //input[@id='gender-male']]
+2020-04-21 14:04:504 INFO  RegisterPage :65 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (7048080990d74e7bdfe5f82b80fae40d)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:393 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:55 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (286bb39e90937ef0bbdeb0ab3c46966d)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:90 INFO  RegisterPage :49 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (286bb39e90937ef0bbdeb0ab3c46966d)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:275 INFO  RegisterPage :58 - Click on Male Gender Redio Button [[ChromeDriver: chrome on WINDOWS (286bb39e90937ef0bbdeb0ab3c46966d)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:376 INFO  RegisterPage :65 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (286bb39e90937ef0bbdeb0ab3c46966d)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:94 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:209 INFO  HomePage :31 - clicking On Login Link : [[ChromeDriver: chrome on WINDOWS (f18cdd3dcead55f7f7c196b318a6fc2c)] -> css selector: a.ico-login]
+2020-04-21 15:04:241 INFO  LoginPage :51 - Getting text from : [[ChromeDriver: chrome on WINDOWS (f18cdd3dcead55f7f7c196b318a6fc2c)] -> css selector: div.page-title]
+2020-04-21 15:04:993 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:765 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (19d928b2790ab00d1cf3c2d1badd1019)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:825 INFO  RegisterPage :50 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (19d928b2790ab00d1cf3c2d1badd1019)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:135 INFO  RegisterPage :60 - Click on Male Gender Redio Button [[ChromeDriver: chrome on WINDOWS (19d928b2790ab00d1cf3c2d1badd1019)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:288 INFO  RegisterPage :67 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (19d928b2790ab00d1cf3c2d1badd1019)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:401 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:917 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (09152f09cf4435edb760190ef377255f)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:00 INFO  RegisterPage :51 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (09152f09cf4435edb760190ef377255f)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:191 INFO  RegisterPage :59 - Click on Male Gender Redio Button [[ChromeDriver: chrome on WINDOWS (09152f09cf4435edb760190ef377255f)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:335 INFO  RegisterPage :66 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (09152f09cf4435edb760190ef377255f)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:626 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:70 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (93df6abb37b4938f246f8a08db2259ae)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:148 INFO  RegisterPage :51 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (93df6abb37b4938f246f8a08db2259ae)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:339 INFO  RegisterPage :59 - Click on Male Gender Redio Button [[ChromeDriver: chrome on WINDOWS (93df6abb37b4938f246f8a08db2259ae)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:467 INFO  RegisterPage :66 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (93df6abb37b4938f246f8a08db2259ae)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:329 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:133 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (3e44ab402b387691d1c2bcd310356f17)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:209 INFO  RegisterPage :51 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (3e44ab402b387691d1c2bcd310356f17)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:394 INFO  RegisterPage :59 - Click on Male Gender Redio button [[ChromeDriver: chrome on WINDOWS (3e44ab402b387691d1c2bcd310356f17)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:523 INFO  RegisterPage :66 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (3e44ab402b387691d1c2bcd310356f17)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:318 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:119 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (3f3e9d5f1854c824f0c7b1b3f00c0346)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:225 INFO  RegisterPage :51 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (3f3e9d5f1854c824f0c7b1b3f00c0346)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:403 INFO  RegisterPage :59 - Click on Male Gender Redio button [[ChromeDriver: chrome on WINDOWS (3f3e9d5f1854c824f0c7b1b3f00c0346)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:523 INFO  RegisterPage :66 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (3f3e9d5f1854c824f0c7b1b3f00c0346)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:835 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:187 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (894a136e4ab881bb4a35d965b9b0303a)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:322 INFO  RegisterPage :51 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (894a136e4ab881bb4a35d965b9b0303a)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:607 INFO  RegisterPage :59 - Click on Male Gender Redio button [[ChromeDriver: chrome on WINDOWS (894a136e4ab881bb4a35d965b9b0303a)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:738 INFO  RegisterPage :66 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (894a136e4ab881bb4a35d965b9b0303a)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:376 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:28 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (b6aec28361455b4211bee17fc441aa17)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:135 INFO  RegisterPage :51 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (b6aec28361455b4211bee17fc441aa17)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:397 INFO  RegisterPage :59 - Click on Male Gender Redio button [[ChromeDriver: chrome on WINDOWS (b6aec28361455b4211bee17fc441aa17)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:580 INFO  RegisterPage :66 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (b6aec28361455b4211bee17fc441aa17)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:49 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:126 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:569 INFO  RegisterPage :51 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:796 INFO  RegisterPage :59 - Click on Male Gender Redio button [[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:938 INFO  RegisterPage :66 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:325 INFO  RegisterPage :74 - Enter your First Name Vinayto first name field : [[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //input[@id='FirstName']]
+2020-04-21 15:04:506 INFO  RegisterPage :81 - Enter your LastName :Thakorto last name field : [[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //input[@id='LastName']]
+2020-04-21 15:04:900 INFO  RegisterPage :88 - Select Day of Birth :1from the drop down list : [[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //select[@name='DateOfBirthDay']]
+2020-04-21 15:04:154 INFO  RegisterPage :96 - Select Month of  Year :Januaryfrom the dropdown list : [[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //select[@name='DateOfBirthMonth']]
+2020-04-21 15:04:380 INFO  RegisterPage :103 - Select Your of Birth1990year from drop down list[[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //select[@name='DateOfBirthYear']]
+2020-04-21 15:04:663 INFO  RegisterPage :110 - Enter Emailabc123@gmail.comto email field[[ChromeDriver: chrome on WINDOWS (f969a396ba4040e40541e9c51ed891c3)] -> xpath: //input[@id='Email']]
+2020-04-21 15:04:408 INFO  BrowserSelector :22 - Chrome browser selected
+2020-04-21 15:04:464 INFO  HomePage :38 - click On Register: [[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //div[@class='header-links-wrapper']//a[contains(text(),'Register')]]
+2020-04-21 15:04:826 INFO  RegisterPage :51 - Verify Personal Details :[[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //div[@class='page-body']//strong[text()='Your Personal Details']]
+2020-04-21 15:04:483 INFO  RegisterPage :59 - Click on Male Gender Redio button [[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //input[@id='gender-male']]
+2020-04-21 15:04:622 INFO  RegisterPage :66 - clicking on Female Gender button : [[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //input[@id='gender-female']]
+2020-04-21 15:04:957 INFO  RegisterPage :74 - Enter your First Name Vinayto first name field : [[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //input[@id='FirstName']]
+2020-04-21 15:04:130 INFO  RegisterPage :81 - Enter your LastName :Thakorto last name field : [[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //input[@id='LastName']]
+2020-04-21 15:04:940 INFO  RegisterPage :88 - Select Day of Birth :1from the drop down list : [[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //select[@name='DateOfBirthDay']]
+2020-04-21 15:04:160 INFO  RegisterPage :96 - Select Month of  Year :Januaryfrom the dropdown list : [[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //select[@name='DateOfBirthMonth']]
+2020-04-21 15:04:368 INFO  RegisterPage :103 - Select Your of Birth1990year from drop down list[[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //select[@name='DateOfBirthYear']]
+2020-04-21 15:04:616 INFO  RegisterPage :110 - Enter Emailabc123@gmail.comto email field[[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //input[@id='Email']]
+2020-04-21 15:04:905 INFO  RegisterPage :117 - Enter Company Name :Prime Testingto company name field[[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> id: Company]
+2020-04-21 15:04:188 INFO  RegisterPage :132 - Enter your password : abcd1234to password field[[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //input[@id='Password']]
+2020-04-21 15:04:366 INFO  RegisterPage :139 - Please conform your password : abcd1234to comform password field[[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //input[@id='ConfirmPassword']]
+2020-04-21 15:04:803 INFO  RegisterPage :146 - Click on register button --->[[ChromeDriver: chrome on WINDOWS (28ec559a396748ca3bda883c6c37a099)] -> xpath: //input[@id='register-button']]
