@@ -11,30 +11,29 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BrowserSelector extends BasePage {
+
     public String projectPath = System.getProperty("user.dir");
+
     //adding variable for Log4j
     private static final Logger log = LogManager.getLogger(BrowserSelector.class.getName());
 
-    public void selectBrowser(String browser){
-        if(browser.equalsIgnoreCase("chrome")){
-            System.setProperty("webdriver.chrome.driver",projectPath+"/drivers/chromedriver.exe");
+    public void selectBrowser(String browser) {
+        if (browser.equalsIgnoreCase("chrome")) {
+            System.setProperty("webdriver.chrome.driver", projectPath + "/drivers/chromedriver.exe");
             driver = new ChromeDriver();
             log.info("Chrome browser selected");
-        }else if(browser.equalsIgnoreCase("firefox")) {
+        } else if (browser.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver", projectPath + "/drivers/geckodriver.exe");
             driver = new FirefoxDriver();
             log.info("firefox browser selected");
-        }else if (browser.equalsIgnoreCase("ie")) {
+        } else if (browser.equalsIgnoreCase("ie")) {
             System.setProperty("webdriver.ie.driver", projectPath + "/drivers/geckodriver.exe");
             driver = new InternetExplorerDriver();
             log.info("IE browser selected");
-        }else{
+        } else {
             System.out.println("Wrong browser name");
+            log.info("Wrong browser selected");
 
         }
     }
-
-
-
-
 }

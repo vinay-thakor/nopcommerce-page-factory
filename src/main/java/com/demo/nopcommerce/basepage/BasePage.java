@@ -10,11 +10,12 @@ import org.openqa.selenium.support.PageFactory;
 public class BasePage {
     public static WebDriver driver;
 
-    public BasePage(){
+    // Constructor
+    public BasePage() {
         //this is for log4j
         PropertyConfigurator.configure(System.getProperty("user.dir") + "/src/test/java/com/demo/nopcommerce/resources/properties/log4j.properties");
         //this is for pagefactory
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
 
     }
 }

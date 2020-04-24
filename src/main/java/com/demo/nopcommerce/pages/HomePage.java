@@ -13,30 +13,24 @@ import org.testng.Reporter;
 public class HomePage extends Utility {
 
     private static final Logger log = LogManager.getLogger(HomePage.class.getName());
-//    By computerTab = By.xpath("//ul[@class='top-menu notmobile']/li[1]/a");
-//    By registerLink = By.xpath("//div[@class='header-links-wrapper']//a[contains(text(),'Register')]");
-//    By logInLink = By.cssSelector("a.ico-login");
-
 
     @FindBy(css = "a.ico-login")
     WebElement _loginLink;
 
-    @FindBy(xpath = "//div[@class='header-links-wrapper']//a[contains(text(),'Register')]")
+    @FindBy(xpath = "//a[@class='ico-register']")
     WebElement _registerLink;
 
-    //this method will clicking on login Link
     public void clickOnLoginLink() {
-        Reporter.log("clicking On Login Link : " + _loginLink.toString() + "<br>");
+        Reporter.log(" Clicking on login link: " + _loginLink.toString() + "<br>");
         clickOnElement(_loginLink);
-        log.info("clicking On Login Link : " + _loginLink.toString());
+        log.info("Clicking on login link: " + _loginLink.toString());
     }
 
-    //this method will clicking on register link
     public void clickOnRegisterLink() {
-        Reporter.log("click On Register: " + _registerLink.toString() + "<br>");
+        Reporter.log("CLicking on register link: "+ _registerLink.toString()+ "<br>");
         clickOnElement(_registerLink);
-        log.info("click On Register: " + _registerLink.toString());
+        log.info("Clicking on register link: " + _registerLink.toString());
     }
+
 
 }
-

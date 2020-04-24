@@ -6,8 +6,6 @@ package com.demo.nopcommerce.pages;/*
 import com.demo.nopcommerce.utility.Utility;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Reporter;
@@ -17,132 +15,142 @@ public class RegisterPage extends Utility {
 
     @FindBy(xpath = "//div[@class='page-body']//strong[text()='Your Personal Details']")
     WebElement _textYourPersonalDetails;
+
     @FindBy(xpath = "//input[@id='gender-male']")
-    WebElement _maleGenderBtn;
+    WebElement _maleGenderRadioBtn;
+
     @FindBy(xpath = "//input[@id='gender-female']")
-    WebElement _femaleGenderBtn;
+    WebElement _femaleGenderRadioBtn;
+
     @FindBy(xpath = "//input[@id='FirstName']")
-    WebElement _firstName;
+    WebElement _firstNameField;
+
     @FindBy(xpath = "//input[@id='LastName']")
-    WebElement _lastName;
+    WebElement _lastNameField;
+
     @FindBy(xpath = "//select[@name='DateOfBirthDay']")
-    WebElement _dayDOBDropDownMenu;
+    WebElement _dayDOB;
+
     @FindBy(xpath = "//select[@name='DateOfBirthMonth']")
-    WebElement _monthDOBDropDownMenu;
+    WebElement _monthDOB;
+
     @FindBy(xpath = "//select[@name='DateOfBirthYear']")
-    WebElement _yearDOBDropDownMenu;
+    WebElement _yearDOB;
+
     @FindBy(xpath = "//input[@id='Email']")
     WebElement _emailField;
-    @FindBy(id = "Company")
+
+    @FindBy(xpath = "//input[@id='Company']")
     WebElement _companyNameField;
+
     @FindBy(css = "input#Newsletter")
-    WebElement _newsLetterCheckedBox;
+    WebElement _newsletterCheckBox;
+
     @FindBy(xpath = "//input[@id='Password']")
     WebElement _passwordField;
+
     @FindBy(xpath = "//input[@id='ConfirmPassword']")
-    WebElement _conformPassWordField;
+    WebElement _confirmPasswordField;
+
     @FindBy(xpath = "//input[@id='register-button']")
     WebElement _registerBtn;
 
-    //methods performing actions on elements
-    public String verifyTextYourPersonalDetails() {
-        waitUntilPresenceOfElementLocated(By.xpath("//div[@class='page-body']//strong[text()='Your Personal Details']"),40);
-        Reporter.log("Verify Personal Details :" + _textYourPersonalDetails.toString() + "<br>");
-        log.info("Verify Personal Details :" + _textYourPersonalDetails.toString());
-        return getTextFromElement(_textYourPersonalDetails);
-
-    }
-    public void selectMaleGenderRadioButton() {
-        waitUntilPresenceOfElementLocated(By.xpath("//input[@id='gender-male']"),40);
-        Reporter.log("Clicking on Male Gender Redio Button button" + _maleGenderBtn.toString() + "<br>");
-        radioButtonClick(_maleGenderBtn);
-        log.info("Click on Male Gender Redio button " + _maleGenderBtn.toString());
+    public void verifyTextYourPersonalDetails(String txt) {
+        Reporter.log(" Verify Text: " + txt + " is displayed on the Registeration Page" + _textYourPersonalDetails.toString() + "<br>");
+        verifyTextAssertMethod(_textYourPersonalDetails, txt);
+        log.info(" Verify Text: " + txt + " is displayed on the Registeration Page" + _textYourPersonalDetails.toString());
     }
 
-    public void selectFemaleGenderRadioButton() {
-        waitUntilPresenceOfElementLocated(By.xpath("//input[@id='gender-female']"),40);
-        Reporter.log("clicking on Female Gender button : " + _femaleGenderBtn.toString() + "<br");
-        radioButtonClick(_femaleGenderBtn);
-        log.info("clicking on Female Gender button : " + _femaleGenderBtn.toString());
+    public void selectMaleGenderRadioBtn() {
+        Reporter.log(" Select Gender Male " + _maleGenderRadioBtn.toString() + "<br>");
+        waitUntilElementToBeClickable(_maleGenderRadioBtn,20);
+        radioButtonClick(_maleGenderRadioBtn);
+        log.info(" Select Gender Male " + _maleGenderRadioBtn.toString());
     }
 
-    public void sendTextToFirstNameField(String firstName) {
-        waitUntilPresenceOfElementLocated(By.xpath("//input[@id='LastName']"),30);
-        Reporter.log("Enter your First Name " + firstName+ "to first name field : " + _firstName.toString() + "<br>");
-       // sendTextToElement(_firstName, string);
-        sendTextToElement(_firstName,firstName);
-        log.info("Enter your First Name " + firstName + "to first name field : " + _firstName.toString());
+    public void selectFemaleGenderRadioBtn() {
+        Reporter.log(" Select Gender Male " + _maleGenderRadioBtn.toString() + "<br>");
+        waitUntilElementToBeClickable(_femaleGenderRadioBtn,20);
+        radioButtonClick(_femaleGenderRadioBtn);
+        log.info(" Select Gender Male " + _femaleGenderRadioBtn.toString());
     }
 
-    public void sendTextToLastNameField(String lastName ) {
-        waitUntilPresenceOfElementLocated(By.xpath("//input[@id='LastName']"),30);
-        Reporter.log("Enter your LastName :" + lastName + "to last name field : " + _lastName.toString() + "<br>");
-        sendTextToElement(_lastName, lastName);
-        log.info("Enter your LastName :" + lastName + "to last name field : " + _lastName.toString());
+    public void sendTextToFirstNameField(String fName) {
+        Reporter.log(" Send text: " + fName + " to First Name field " + _firstNameField.toString() + "<br>");
+        waitUntilElementToBeClickable(_firstNameField,20);
+        sendTextToElement(_firstNameField, fName);
+        log.info(" Send text: " + fName + " to First Name field " + _firstNameField.toString());
     }
 
-    public void selectDayDOBFromDropDownMenu(String value) {
-        waitUntilPresenceOfElementLocated(By.xpath("//select[@name='DateOfBirthDay']"),40);
-        Reporter.log("Select Day of Birth :" + value + "from the drop down list : " + _dayDOBDropDownMenu.toString() + "<br>");
-        selectByValueFromDropDown(_dayDOBDropDownMenu, value);
-        log.info("Select Day of Birth :" + value + "from the drop down list : " + _dayDOBDropDownMenu.toString());
-
+    public void sendTextToLastNameField(String lName) {
+        Reporter.log(" Send text: " + lName + " to Last Name field " + _lastNameField.toString() + "<br>");
+        waitUntilElementToBeClickable(_lastNameField,20);
+        sendTextToElement(_lastNameField, lName);
+        log.info(" Send text: " + lName + " to Last Name field " + _lastNameField.toString());
     }
 
-    public void selectMonthDOBFromDropDownMenu(String month) {
-        waitUntilPresenceOfElementLocated(By.xpath("//select[@name='DateOfBirthYear']"),40);
-        Reporter.log("Select Month of  Year :" + month + "from the dropdown list : " + _monthDOBDropDownMenu.toString() + "<br>");
-        selectByVisibleTextFromDropDown(_monthDOBDropDownMenu, month);
-        log.info("Select Month of  Year :" + month + "from the dropdown list : " + _monthDOBDropDownMenu.toString());
+    public void selectDayDOBFromDropDownMenu(String date) {
+        Reporter.log(" Select date of DOB from the drop down menu: " + _dayDOB.toString() + "<br>");
+        waitUntilElementToBeClickable(_dayDOB,20);
+        selectByVisibleTextFromDropDown(_dayDOB, date);
+        log.info(" Select date of DOB from the drop down menu: " + _dayDOB.toString());
     }
 
-    public void selectYearDOBFromDropDownMenu(String year) {
-        waitUntilPresenceOfElementLocated(By.xpath("//input[@id='Email']"),40);
-        Reporter.log("Select Your of Birth" + year + "year from drop down list" + _yearDOBDropDownMenu.toString() + "<br>");
-        selectByValueFromDropDown(_yearDOBDropDownMenu, year);
-        log.info("Select Your of Birth" + year + "year from drop down list" + _yearDOBDropDownMenu.toString());
+    public void selectMonthDOBFromDropDownMenu(String mnth) {
+        Reporter.log(" Select month of DOB from the drop down menu:" + _monthDOB.toString()+ "<br>");
+        waitUntilElementToBeClickable(_monthDOB,20);
+        selectByVisibleTextFromDropDown(_monthDOB, mnth);
+        log.info(" Select month of DOB from the drop down menu:" + _monthDOB.toString());
     }
 
-    public void sendTextToEmailField(String emil) {
-        waitUntilPresenceOfElementLocated(By.xpath("//input[@id='Email']"),40);
-        Reporter.log("Enter Email" + emil + "to email field" + _emailField.toString() + "<br>");
-        sendTextToElement(_emailField, emil);
-        log.info("Enter Email" + emil + "to email field" + _emailField.toString());
+    public void selectYearDOBFromDropDownMenu(String yr) {
+        Reporter.log(" Select year of DOB from drop down menu:" +_yearDOB.toString() +"<br>");
+        waitUntilElementToBeClickable(_yearDOB,20);
+        selectByVisibleTextFromDropDown(_yearDOB, yr);
+        log.info(" Select year of DOB from drop down menu:" +_yearDOB.toString());
     }
 
-    public void sendTextToCompanyField(String companyName) {
-        waitUntilPresenceOfElementLocated(By.id("Company"),40);
-        Reporter.log("Enter Company Name :" + companyName + "to company name field" + _companyNameField.toString() + "<br>");
-        sendTextToElement(_companyNameField, companyName);
-        log.info("Enter Company Name :" + companyName + "to company name field" + _companyNameField.toString());
+    public void sendTextToEmailField(String emailId) {
+        Reporter.log(" Send text: "+emailId+" to email field "+_emailField.toString()+"<br>");
+        waitUntilElementToBeClickable(_emailField,20);
+        sendTextToElement(_emailField, emailId);
+        log.info(" Send text: "+emailId+" to email field "+_emailField.toString());
     }
 
+    public void sendTextToCompanyNameField(String coName) {
+        Reporter.log(" Send text: "+coName+" to company name field "+_companyNameField.toString()+ "<br>");
+        waitUntilElementToBeClickable(_companyNameField,20);
+        sendTextToElement(_companyNameField, coName);
+        log.info(" Send text: "+coName+" to company name field "+_companyNameField.toString());
+    }
 
     public void selectNewsLetterCheckBox() {
-        waitUntilPresenceOfElementLocated(By.cssSelector("input#Newsletter"),40);
-        Reporter.log("News letter box : " + _newsLetterCheckedBox.toString() + "<br>");
-        elementIsSelected(_newsLetterCheckedBox);
-        Reporter.log("News letter box : " + _newsLetterCheckedBox.toString());
+        Reporter.log(" Check if newsletter checkbox ticked "+_newsletterCheckBox.toString()+"<br>");
+        waitUntilElementToBeClickable(_newsletterCheckBox,20);
+        elementIsSelected(_newsletterCheckBox);
+        log.info(" Check if newsletter checkbox ticked "+_newsletterCheckBox.toString());
     }
 
-    public void sendTextToPasswordField(String password) {
-        waitUntilPresenceOfElementLocated(By.xpath("//input[@id='Password']"),40);
-        Reporter.log("Enter your password : " + password + "to password field" + _passwordField.toString() + "<br>");
-        sendTextToElement(_passwordField, password);
-        log.info("Enter your password : " + password + "to password field" + _passwordField.toString());
+    public void sendTextToPasswordField(String pwd) {
+        Reporter.log(" Send text: "+pwd+ " to password field " +_passwordField.toString() +"<br>");
+        waitUntilElementToBeClickable(_passwordField,20);
+        sendTextToElement(_passwordField, pwd);
+        log.info(" Send text: "+pwd+ " to password field " +_passwordField.toString());
     }
 
-    public void sendTextToConfirmPasswordField(String conformPassword) {
-        waitUntilPresenceOfElementLocated(By.xpath("//input[@id='ConfirmPassword']"),40);
-        Reporter.log("Please conform your password : " + conformPassword + "to comform password field" + _conformPassWordField + "<br>");
-        sendTextToElement(_conformPassWordField, conformPassword);
-        log.info("Please conform your password : " + conformPassword + "to comform password field" + _conformPassWordField);
+    public void sendTextToConfirmPasswordField(String coPwd) {
+        Reporter.log(" Send text: "+coPwd+ " to confirm password field " +_confirmPasswordField.toString() +"<br>");
+        waitUntilElementToBeClickable(_confirmPasswordField,20);
+        sendTextToElement(_confirmPasswordField, coPwd);
+        log.info(" Send text: "+coPwd+ " to confirm password field " +_confirmPasswordField.toString());
     }
 
     public void clickOnRegisterButton() {
-        waitUntilPresenceOfElementLocated(By.xpath("//input[@id='register-button']"),40);
-        Reporter.log("Click on register button --->" + _registerBtn.toString() + "<br>");
+        Reporter.log(" Click on Register button "+_registerBtn.toString()+"<br>");
+        waitUntilElementToBeClickable(_registerBtn,20);
         clickOnElement(_registerBtn);
-        log.info("Click on register button --->" + _registerBtn.toString());
+        log.info(" Click on Register button "+_registerBtn.toString());
     }
 }
+
+

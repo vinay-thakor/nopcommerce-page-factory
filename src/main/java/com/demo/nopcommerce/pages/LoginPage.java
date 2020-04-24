@@ -14,54 +14,51 @@ public class LoginPage extends Utility {
     private static final Logger log = LogManager.getLogger(LoginPage.class.getName());
 
     @FindBy(css = "input#Email")
-    WebElement _emialField;
+    WebElement _emailField;
 
-    @FindBy(css = "input.password")
-    WebElement _Password;
+    @FindBy(css = "input#Password")
+    WebElement _passwordField;
 
-    @FindBy(css = "input.button-1.login-button")
+    @FindBy(xpath = "//input[@class='button-1 login-button']")
     WebElement _loginBtn;
 
-    @FindBy(css = "div.page-title")
-    WebElement _welComeText;
+    @FindBy(xpath = "//div[@class='page-title']//h1")
+    WebElement _welcomeText;
 
-    //Enter email address
-    public void enterEmailId(String emil) {
-        Reporter.log("Enter email : " + emil + "to email field " + _emialField.toString() + "<br>");
-        sendTextToElement(_emialField, emil);
-        log.info("Enter email : " + emil + "to email field " + _emialField.toString());
-    }
-    //Enter password
 
-    public void enterPassword(String password) {
-        Reporter.log("Enter password : " + password + "to Password field " + _Password.toString() + "<br>");
-        sendTextToElement(_Password, password);
-        log.info("Enter password : " + password + "to Password field " + _Password.toString());
+    public void enterEmailId(String un) {
+        Reporter.log(" Enter email: " + un + " to email field " + _emailField.toString() + "<br>");
+        waitUntilElementToBeClickable(_emailField, 20);
+        sendTextToElement(_emailField, un);
+        log.info(" Enter email: " + un + " to email filed " + _emailField.toString());
     }
 
-    //this method will click on the login button
+    public void enterPassword(String pwd) {
+        Reporter.log(" Enter password: " + pwd + " to password field " + _passwordField.toString() + "<br>");
+        waitUntilElementToBeClickable(_passwordField, 20);
+        sendTextToElement(_passwordField, pwd);
+        log.info(" Enter password: " + pwd + " to password field " + _passwordField.toString());
+
+    }
+
     public void clickOnLoginBtn() {
-        Reporter.log("Click on login Button : " + _loginBtn.toString() + "<br>");
+        Reporter.log(" Click on Login button: " + _loginBtn.toString() + "<br>");
+        waitUntilElementToBeClickable(_loginBtn, 20);
         clickOnElement(_loginBtn);
-        log.info("Click on login Button : " + _loginBtn.toString());
+        log.info(" Click on Login button: " + _loginBtn.toString());
     }
 
-    public String getWelcomeText() {
-        Reporter.log("Getting text from : " + _welComeText.toString() + "<br>");
-        log.info("Getting text from : " + _welComeText.toString());
-        return getTextFromElement(_welComeText);
-
+    public void verifyWelcomeText(String welTxt) {
+        Reporter.log(" Verify Text: " + welTxt + " is displayed on Login page " + _welcomeText.toString() + "<br>");
+        verifyTextAssertMethod(_welcomeText,welTxt);
+        log.info(" Verify Text: " + welTxt + " is displayed on Login page " + _welcomeText.toString());
     }
+
+    public void loginToApplication(String username, String password) {
+        enterEmailId(username);
+        enterPassword(password);
+        clickOnLoginBtn();
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
 

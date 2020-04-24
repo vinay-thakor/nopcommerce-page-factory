@@ -3,46 +3,95 @@ package com.demo.nopcommerce.testsuite;/*
  *Date of Creation
  */
 
-import com.demo.nopcommerce.pages.AccountPage;
-import com.demo.nopcommerce.pages.HomePage;
-import com.demo.nopcommerce.pages.LoginPage;
-import com.demo.nopcommerce.pages.RegisterPage;
+import com.demo.nopcommerce.pages.*;
+import com.demo.nopcommerce.tesdata.TestData;
 import com.demo.nopcommerce.testbase.TestBase;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import static com.demo.nopcommerce.utility.Utility.getRandomString;
+
 public class RegisterTest extends TestBase {
+    static String email = null;
 
     HomePage homePage;
-    LoginPage loginPage;
-    AccountPage accountPage;
     RegisterPage registerPage;
+    RegistrationCompletePage registrationCompletePage;
 
+    //Object created for pages
     @BeforeMethod(groups = {"Regression", "Smoke", "Sanity"})
     public void setUp() {
         homePage = new HomePage();
-        loginPage = new LoginPage();
-        accountPage = new AccountPage();
         registerPage = new RegisterPage();
+        registrationCompletePage = new RegistrationCompletePage();
     }
 
-    @Test(groups = {"Regression", "Smoke"})
-    public void verifyUserShouldRegisterSuccessfully() {
+    //getRandomString method generates a random value for email every time the test case runs
+    @BeforeTest(groups = {"Regression", "Smoke", "Sanity"})
+    public static void registrationSetUp() {
+        email = "xyz" + getRandomString(2) + "@gmail.com";
+    }
+
+    /*
+     * Test Case 1 - User should navigate to register page successfully.
+     */
+    @Test(groups = {"Regression", "Smoke", "Sanity"})
+    public void userShouldNavigateToRegisterPageSuccessfully() {
+        //click on Register link on HomePage
         homePage.clickOnRegisterLink();
-        registerPage.verifyTextYourPersonalDetails();
-        registerPage.selectMaleGenderRadioButton();
-        registerPage.selectFemaleGenderRadioButton();
-        registerPage.sendTextToFirstNameField("Vinay");
-        registerPage.sendTextToLastNameField("Thakor");
-        registerPage.selectDayDOBFromDropDownMenu("1");
-        registerPage.selectMonthDOBFromDropDownMenu("January");
-        registerPage.selectYearDOBFromDropDownMenu("1990");
-        registerPage.sendTextToEmailField("abc123@gmail.com");
-        registerPage.sendTextToCompanyField("Prime Testing");
-        registerPage.selectNewsLetterCheckBox();
-        registerPage.sendTextToPasswordField("abcd1234");
-        registerPage.sendTextToConfirmPasswordField("abcd1234");
-        registerPage.clickOnRegisterButton();
-
+        //Assert text on RegistrationPage
+        registerPage.verifyTextYourPersonalDetails("Your Personal Details");
     }
+
+    /*
+     * Test Case 2 - User should register successfully.
+     */
+    @Test(groups = {"Regression", "Smoke"}, dataProvider = "RegisterDetails", dataProviderClass = TestData.class)
+    public void userShouldRegisterSuccessfullyAndLoginUsingSameCredentials(String fName, String lName, String date, String month, String year, String coName, String password) {
+        //click on Register link on HomePage
+        homePage.clickOnRegisterLink();
+        //select Male gender radio button
+        registerPage.selectMaleGenderRadioBtn();
+        //select Female gender radio button
+        //registerPage.selectFemaleGenderRadioBtn();
+        //send text to First Name field
+        registerPage.sendTextToFirstNameField(fName);
+        //send text to Last Name field
+        registerPage.sendTextToLastNameField(lName);
+        //select day from DOB drop down menu
+        registerPage.selectDayDOBFromDropDownMenu(date);
+        //select month from DOB drop down menu
+        registerPage.selectMonthDOBFromDropDownMenu(month);
+        //select year from DOB drop down menu
+        registerPage.selectYearDOBFromDropDownMenu(year);
+        //send text to Email field
+        registerPage.sendTextToEmailField(email);
+        //send text to Company name field
+        registerPage.sendTextToCompanyNameField(coName);
+        //check Newsletter checkbox is selected
+        registerPage.selectNewsLetterCheckBox();
+        //send text to Password field
+        registerPage.sendTextToPasswordField(password);
+        //send text to Confirm password field
+        registerPage.sendTextToConfirmPasswordField(password);
+        //click Register button
+        registerPage.clickOnRegisterButton();
+        //Assert text Registration complete page
+        registrationCompletePage.verifyRegistrationCompleteText("Your registration completed");
+    }
+
+
+    /*
+     * Test Case 3 - User should navigate to register page successfully.
+     */
+    @Test(groups = {"Regression"})
+    public void userShouldNotNavigateToRegisterPageSuccessfully() {
+        //click on Login link on HomePage
+        homePage.clickOnLoginLink();
+        //Assert text on RegistrationPage
+        registerPage.verifyTextYourPersonalDetails("Your Personal Details");
+    }
+
 }
+
